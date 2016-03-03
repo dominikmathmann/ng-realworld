@@ -1,6 +1,11 @@
 {
   "name": "ng1-realworld",
   "version": "0.0.1",
+    "scripts": {
+    "start": "grunt start",
+    "package": "grunt package",
+    "clean": "grunt clean:dist"
+  },
   "keywords": [
     "util",
     "functional",

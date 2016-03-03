@@ -6,7 +6,7 @@ module.exports = function (grunt) {
                 options: {
                     port: 3000,
                     hostname: 'localhost',
-                    base: 'dist/ng1',
+                    base: 'src',
                     livereload: true,
                 },
                 proxies: [
@@ -35,11 +35,11 @@ module.exports = function (grunt) {
         },
         uglify: {
             options: {
-                sourceMap: true
+                sourceMap: false
             }
         },
         clean: {
-            dist: ['.tmp', 'dist']
+            dist: ['.tmp', 'dist', '*.war']
         },
         usemin: {
             html: ['dist/ng1/{,*/}*.html'],
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
             html: {
                 src: '{,**/}*.html',
                 expand: true,
-                cwd: 'src/app',
+                cwd: 'src',
                 dest: 'dist/ng1/'
             },
             index: {
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
                 src: 'fonts/**',
                 expand: true,
                 cwd: 'src/app/assets',
-                dest: 'dist/ng1/assets'
+                dest: 'dist/ng1/app/assets'
             },
            
 
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
             },
             development: {
                 files: ['src/**'],
-                tasks: ['build:usemin']
+                tasks: []
             }
         },
         maven: {
@@ -121,7 +121,6 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask("start", [
-        'build:usemin',
         'connect:server',
         'watch:development'
     ]);
