@@ -2,3 +2,4 @@
 /src/main/angular1/dist/
 /src/main/angular1/.tmp/
 /src/main/angular1/node_modules/
+/src/main/angular1/*.war
