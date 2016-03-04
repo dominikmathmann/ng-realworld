@@ -1,0 +1,35 @@
+/*Paletton used: http://paletton.com/#uid=33F0d0kwi++bu++hX++++rd++kX*/
+
+.navbar{
+    background-color: #1775FF;
+}
+
+.navbar .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #FFB400;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    background: none;
+    background-color: #003A8F;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    background: none;
+    background-color: #ACCEFF;
+}
+
+.ui-grid-header{
+    height: 2em;
+}
+
+.ui-grid-contents-wrapper{
+    height: 75%;
+}

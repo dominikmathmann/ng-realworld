@@ -1,17 +1,23 @@
 (function () {
     "use strict";
 
-    angular.module("ng1rw", ['ui.router', 'ng1rw.home'])
-            .config(function ($stateProvider, $urlRouterProvider) {
+    angular.module("ng1rw", ['ui.router', 'ng1rw.home', 'ng1rw.customer'])
+            .config(function ($stateProvider, $urlRouterProvider) {                
                 $stateProvider
-                        .state('home', {
-                            url: '/home',
-                            templateUrl: "app/components/home/home.html",
-                            controller: 'Home',
+                        .state('HelloWorld', {
+                            url: '/helloworld',
+                            templateUrl: "app/components/helloworld/helloworld.html",
+                            controller: 'HelloWorld',
+                            controllerAs: 'vm'
+                        })
+                        .state("Customer", {
+                            url: '/customer',
+                            template: '<div ui-view></div>',
+                            controller: 'Customer',
                             controllerAs: 'vm'
                         });
 
-                $urlRouterProvider.otherwise("home");
+                $urlRouterProvider.otherwise("helloworld");
             })
 
             .controller('AppController', function () {

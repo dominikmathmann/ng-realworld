@@ -28,11 +28,11 @@ abstract class BasicRepository<ENTITY, ID> {
         this.entityClass = entityKlasse;
     }
 
-    protected ENTITY findById(ID id) {
+    public ENTITY findById(ID id) {
         return this.entityManager.find(entityClass, id);
     }
 
-    protected <Y> List<ENTITY> findByAttribute(SingularAttribute<ENTITY, Y> attributename, Y attributevalue) {
+    public <Y> List<ENTITY> findByAttribute(SingularAttribute<ENTITY, Y> attributename, Y attributevalue) {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<ENTITY> query = cb.createQuery(entityClass);
         Root<ENTITY> root = query.from(entityClass);
@@ -41,7 +41,7 @@ abstract class BasicRepository<ENTITY, ID> {
         return this.getEntityManager().createQuery(query).getResultList();
     }
 
-    protected <Y> Long countByAttribute(SingularAttribute<ENTITY, Y> attributename, Y attributevalue) {
+    public <Y> Long countByAttribute(SingularAttribute<ENTITY, Y> attributename, Y attributevalue) {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<Long> query = cb.createQuery(Long.class);
         Root<ENTITY> root = query.from(entityClass);
@@ -51,7 +51,7 @@ abstract class BasicRepository<ENTITY, ID> {
         return this.getEntityManager().createQuery(query).getSingleResult();
     }
 
-    protected Long count() {
+    public Long count() {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<Long> query = cb.createQuery(Long.class);
         Root<ENTITY> root = query.from(entityClass);
@@ -60,16 +60,16 @@ abstract class BasicRepository<ENTITY, ID> {
         return this.getEntityManager().createQuery(query).getSingleResult();
     }
 
-    protected ENTITY merge(ENTITY entity) {
+    public ENTITY merge(ENTITY entity) {
         this.entityManager.merge(entity);
         return entity;
     }
 
-    protected void delete(Integer id) {
+    public void delete(Integer id) {
         this.entityManager.remove(this.entityManager.getReference(entityClass, id));
     }
 
-    protected List<ENTITY> getAll() {
+    public List<ENTITY> getAll() {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<ENTITY> query = cb.createQuery(entityClass);
         Root<ENTITY> root = query.from(entityClass);
@@ -77,7 +77,7 @@ abstract class BasicRepository<ENTITY, ID> {
         return this.getEntityManager().createQuery(query).getResultList();
     }
 
-    protected List<ENTITY> getAll(SingularAttribute<ENTITY, ?> sortAttribut, boolean descending) {
+    public List<ENTITY> getAll(SingularAttribute<ENTITY, ?> sortAttribut, boolean descending) {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<ENTITY> query = cb.createQuery(entityClass);
         Root<ENTITY> root = query.from(entityClass);
@@ -90,7 +90,7 @@ abstract class BasicRepository<ENTITY, ID> {
         return this.getEntityManager().createQuery(query).getResultList();
     }
 
-    protected List<ENTITY> getAll(SingularAttribute<ENTITY, ?> sortAttribut, boolean descending, int max, int start) {
+    public List<ENTITY> getAll(SingularAttribute<ENTITY, ?> sortAttribut, boolean descending, int max, int start) {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<ENTITY> query = cb.createQuery(entityClass);
         Root<ENTITY> root = query.from(entityClass);
@@ -107,13 +107,13 @@ abstract class BasicRepository<ENTITY, ID> {
         return typedQuery.getResultList();
     }
 
-    protected QueryResult<ENTITY> search(QuerySettings settings){
+    public QueryResult<ENTITY> search(QuerySettings settings) {
         List<ENTITY> result = searchEntities(settings);
         Long count = searchCount(settings);
         return new QueryResult<>(result, count);
     }
-    
-    protected List<ENTITY> searchEntities(QuerySettings settings) {
+
+    public List<ENTITY> searchEntities(QuerySettings settings) {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<ENTITY> query = cb.createQuery(entityClass);
         Root<ENTITY> root = query.from(entityClass);
@@ -126,13 +126,19 @@ abstract class BasicRepository<ENTITY, ID> {
         query.select(root);
 
         TypedQuery<ENTITY> typedQuery = this.getEntityManager().createQuery(query);
-        typedQuery.setMaxResults(settings.getMax());
-        typedQuery.setFirstResult(settings.getStart());
+
+        if (settings.getMax() != null) {
+            typedQuery.setMaxResults(settings.getMax());
+        }
+
+        if (settings.getStart() != null) {
+            typedQuery.setFirstResult(settings.getStart());
+        }
 
         return typedQuery.getResultList();
     }
 
-    protected Long searchCount(QuerySettings settings) {
+    public Long searchCount(QuerySettings settings) {
         CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
         CriteriaQuery<Long> query = cb.createQuery(Long.class);
         Root<ENTITY> root = query.from(entityClass);
@@ -146,7 +152,7 @@ abstract class BasicRepository<ENTITY, ID> {
         return typedQuery.getSingleResult();
     }
 
-    private Order[] retrieveSorting(QuerySettings settings, CriteriaBuilder cb, Root<ENTITY> root) { 
+    private Order[] retrieveSorting(QuerySettings settings, CriteriaBuilder cb, Root<ENTITY> root) {
         return settings.getSorting().keySet().stream().map((sortKey) -> {
             if (settings.getSorting().get(sortKey).equals("desc")) {
                 return cb.desc(root.get(sortKey));
@@ -162,7 +168,7 @@ abstract class BasicRepository<ENTITY, ID> {
         }).toArray(Predicate[]::new);
     }
 
-    protected EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
         return entityManager;
     }
 }

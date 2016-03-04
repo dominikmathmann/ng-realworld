@@ -1,0 +1,73 @@
+customer-details *{
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+customer-details{
+    display: block;
+    width: 300px;
+    height: 120px;
+    margin-bottom: 60px;
+}
+
+customer-details>div:first-child{
+    background-color: white;
+    padding: 2px 2px 3px 2px;
+
+    border: 2px solid white;
+    border-radius: 4px;
+    height: 100%;
+}
+
+customer-details .content{
+    height: 100%;
+    padding: 10px 0px 0px 10px
+}
+
+customer-details a:hover, customer-details a{
+    text-decoration: none;
+    color: white;
+}
+
+customer-details .thumbnail{
+    background-color: #7DB1FF;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+}
+
+customer-details .header{
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+customer-details .details{
+    text-align: center;
+    width: 100%;
+}
+
+customer-details hr{
+    margin-top: 0px;
+    width: 50%;
+    border: 2px solid #FF8B00;
+}
+
+customer-details .thumbnail:hover{
+    background-color: #1775FF;
+    color: black;
+}
+customer-details>div:first-child:hover{
+    border: 2px solid #FFB400;
+}
+
+
+@media (max-width: 350px) {
+    customer-details{
+        width: 240px;
+        height: 200px;
+        margin: 15px;
+    }
+}

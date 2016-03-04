@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import javax.xml.bind.annotation.XmlRootElement;
 
 public class QuerySettings {
 

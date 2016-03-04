@@ -5,15 +5,25 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     port: 3000,
-                    hostname: 'localhost',
                     base: 'src',
                     livereload: true,
+                    hostname: 'localhost',
+                    middleware: function (connect, options, middlewares) {
+                        middlewares.unshift(require('grunt-connect-proxy/lib/utils').proxyRequest);
+                        return middlewares;
+                    }
                 },
                 proxies: [
                     {
-                        context: '/webresources',
+                        context: ['/webresources', '/bvrules'],
+                        rewrite: {
+                            '^/bvrules': '/ng-realworld/bvrules',
+                            '^/webresources': '/ng-realworld/webresources'
+                        },
                         host: 'localhost',
-                        port: 8080
+                        port: 8080,
+                        https: false,
+                        xforward: true
                     }
                 ]
             }
@@ -65,8 +75,6 @@ module.exports = function (grunt) {
                 cwd: 'src/app/assets',
                 dest: 'dist/ng1/app/assets'
             },
-           
-
         },
         watch: {
             options: {
@@ -106,6 +114,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-maven-tasks');
+    grunt.loadNpmTasks('grunt-connect-proxy');
 
     grunt.registerTask('build:usemin', [
         'clean:dist',
@@ -121,6 +130,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask("start", [
+        'configureProxies:server',
         'connect:server',
         'watch:development'
     ]);
