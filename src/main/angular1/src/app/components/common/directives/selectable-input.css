@@ -1,0 +1,19 @@
+
+selectable-input .selected{
+    background-color: #ACCEFF
+}
+selectable-input{
+    cursor: pointer;
+}
+selectable-input li,selectable-input ul{
+    width: 100%;
+    list-style: none;
+}
+
+selectable-input a{
+    cursor: pointer;
+}
+
+selectable-input input:disabled{
+    background-color: white;
+}

@@ -1,0 +1,27 @@
+<div class="row assign-shipper">
+    <div class="col-md-4 col-md-offset-2">
+        <div>
+            Orders<br/>
+            <div>
+                <input-selection selection="vm.selectedOrders">
+                    <div ng-repeat="order in vm.orders">
+                        <selectable-input type="text" readonly="readonly" value="{{::order.orderID}}"></selectable-input>
+                    </div>
+                </input-selection>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <button class="btn btn-primary" ng-click="vm.update()">Update</button>
+    </div>
+    <div class="col-md-4 col-md-offset-1">
+        <div>
+            Shipper<br/>
+            <div>
+                <input-selection selection="vm.selectedShipper" single="true">
+                    <selectable-input type="text" readonly="readonly" ng-repeat="shipper in vm.shipper" value="{{::shipper.shipperID}}" label="{{::shipper.companyName}}"></selectable-input>
+                </input-selection>
+            </div>
+        </div>
+    </div>
+</div>

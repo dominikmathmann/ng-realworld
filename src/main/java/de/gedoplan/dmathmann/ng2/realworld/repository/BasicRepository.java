@@ -13,7 +13,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.metamodel.SingularAttribute;
 
-abstract class BasicRepository<ENTITY, ID> {
+abstract public class BasicRepository<ENTITY, ID> {
 
     @PersistenceContext(name = "webclients")
     EntityManager entityManager;

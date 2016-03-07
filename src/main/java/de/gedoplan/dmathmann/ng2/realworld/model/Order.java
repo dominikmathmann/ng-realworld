@@ -74,8 +74,8 @@ public class Order implements Serializable {
     private Employee employee;
 
     @JoinColumn(name = "ShipVia", referencedColumnName = "shipperID")
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonView(DetailView.class)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JsonView(ListView.class)
     private Shipper shipVia;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "order")

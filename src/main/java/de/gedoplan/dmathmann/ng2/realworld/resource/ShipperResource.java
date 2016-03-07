@@ -1,22 +1,22 @@
 package de.gedoplan.dmathmann.ng2.realworld.resource;
 
 import de.gedoplan.dmathmann.ng2.realworld.repository.BasicRepository;
-import de.gedoplan.dmathmann.ng2.realworld.repository.CustomerRepository;
+import de.gedoplan.dmathmann.ng2.realworld.repository.ShipperRepository;
 import javax.inject.Inject;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/customer")
+@Path("/shipper")
 @Produces(MediaType.APPLICATION_JSON)
-public class CustomerResource implements BasicResource {
+public class ShipperResource implements BasicResource {
 
     @Inject
-    CustomerRepository customerRepository;
+    ShipperRepository shipperRepository;
 
     @Override
     public BasicRepository getRepository() {
-        return customerRepository;
+        return shipperRepository;
     }
 
 }

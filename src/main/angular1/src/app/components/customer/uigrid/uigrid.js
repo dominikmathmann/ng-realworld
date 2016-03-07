@@ -3,7 +3,7 @@
     angular.module("ng1rw.uigrid", ['ng1rw.CustomerServices', 'ui.grid', 'ui.grid.pagination'])
             .controller("UIGrid", function (CustomerService) {
                 var vm = this;
-                CustomerService.get(null, function (response) {
+                CustomerService.query(null, function (response) {
                     vm.customers = response.result;
                     vm.initTable();
                 });

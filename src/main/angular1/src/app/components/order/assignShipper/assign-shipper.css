@@ -1,0 +1,4 @@
+.assign-shipper select{
+  -webkit-appearance: menulist-textfield;
+  height: 45px;
+}

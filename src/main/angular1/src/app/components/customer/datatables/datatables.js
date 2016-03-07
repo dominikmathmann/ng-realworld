@@ -8,7 +8,7 @@
 
                 jQuery('#customer').DataTable({
                     ajax: function (data, callback, settings) {
-                        CustomerService.get(null, function (response) {
+                        CustomerService.query(null, function (response) {
                             callback({
                                 data: response.result,
                                 recordsTotal: response.resultCount,
