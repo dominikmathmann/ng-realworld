@@ -100,6 +100,34 @@ module.exports = function (grunt) {
                 cwd: 'dist/',
                 src: '**'
             }
+        },
+        karma: {
+            unit: {
+                options: {
+                    frameworks: ['jasmine'],
+                    singleRun: true,
+                    browsers: ['Firefox'],
+                    files: [
+                        'src/bower_components/jquery/dist/jquery.js',
+                        'src/bower_components/angular/angular.js',
+                        'src/bower_components/angular-mocks/angular-mocks.js',
+                        'src/bower_components/angular-resource/angular-resource.js',
+                        'src/app.js',
+                        'src/app/**/*.js',
+                        'test/**/*.js'
+                    ],
+                    // coverage reporter generates the coverage
+                    reporters: ['progress', 'coverage'],
+                    preprocessors: {
+                        'src/app/**/*.js': ['coverage']
+                    },
+                    // optionally, configure the reporter
+                    coverageReporter: {
+                        type: 'html',
+                        dir: 'test/coverage/'
+                    }
+                }
+            }
         }
     });
 
@@ -115,6 +143,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-maven-tasks');
     grunt.loadNpmTasks('grunt-connect-proxy');
+    grunt.loadNpmTasks('grunt-karma');
 
     grunt.registerTask('build:usemin', [
         'clean:dist',
@@ -136,8 +165,13 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask("package", [
+        'test',
         'build:usemin',
         'maven:install'
+    ]);
+
+    grunt.registerTask('test', [
+        'karma'
     ]);
 
 };

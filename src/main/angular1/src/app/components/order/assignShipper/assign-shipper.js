@@ -2,7 +2,7 @@
     "use strict";
     angular.module("ng1realworld.assignshipper", ['ng1realworld.OrderService', 'ng1realworld.ShipperService', 'ng1realworld.directives.selectable-input'])
 
-            .controller("AssignShipper", function ($scope, $rootScope, growl, OrderService, ShipperService, $q) {
+            .controller("AssignShipper", function ($rootScope, growl, OrderService, ShipperService, $q) {
                 var vm = this;
                 vm.selectedOrders = [];
                 vm.selectedShipper = [];

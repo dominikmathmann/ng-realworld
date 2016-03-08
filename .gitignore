@@ -3,3 +3,4 @@
 /src/main/angular1/.tmp/
 /src/main/angular1/node_modules/
 /src/main/angular1/*.war
+/src/main/angular1/test/coverage/

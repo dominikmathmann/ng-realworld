@@ -5,8 +5,10 @@
                 var vm = this;
                 CustomerService.query({}, function (response) {
                     vm.customers = response.result;
+                    vm.selected;
                     
                     vm.selectCustomer = function (customer){
+                        vm.selected=customer;
                         alert(customer.customerID);
                     };
                 });
