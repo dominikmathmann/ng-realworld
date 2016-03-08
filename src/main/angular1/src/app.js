@@ -1,8 +1,8 @@
 (function () {
     "use strict";
 
-    angular.module("ng1rw", ['ui.router', 'ng1rw.home', 'ng1rw.customer', 'ng1rw.order', 'angular-growl'])
-            .config(function ($stateProvider, $urlRouterProvider) {                
+    angular.module("ng1rw", ['ngMockE2E', 'ui.router', 'ng1rw.home', 'ng1rw.customer', 'ng1rw.order', 'angular-growl'])
+            .config(function ($stateProvider, $urlRouterProvider) { 
                 $stateProvider
                         .state('HelloWorld', {
                             url: '/helloworld',

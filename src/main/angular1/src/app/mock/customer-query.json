@@ -1,0 +1,733 @@
+{
+  "result":   [
+    {
+      "address": "Obere Str. 57",
+      "city": "Berlin",
+      "contactName": "Maria Anders",
+      "companyName": "Ernst August",
+      "postalCode": "12209",
+      "customerID": "ALFAA"
+    },
+    {
+      "address": "Avda. de la Constitución 2222",
+      "city": "México D.F.",
+      "contactName": "Ana Trujillo",
+      "companyName": "Ana Trujillo Emparedados y helados",
+      "postalCode": "05021",
+      "customerID": "ANATR"
+    },
+    {
+      "address": "Mataderos  2312",
+      "city": "México D.F.",
+      "contactName": "Antonio Moreno",
+      "companyName": "Antonio Moreni",
+      "postalCode": "05023",
+      "customerID": "ANTON"
+    },
+    {
+      "address": "120 Hanover Sq.",
+      "city": "London",
+      "contactName": "Thomas Hardy",
+      "companyName": "Around the Horn",
+      "postalCode": "WA1 1DP",
+      "customerID": "AROUT"
+    },
+    {
+      "address": "Berguvsvägen  8",
+      "city": "Luleå",
+      "contactName": "Christina Berglund",
+      "companyName": "Berglunds snabbköp",
+      "postalCode": "S-958 22",
+      "customerID": "BERGS"
+    },
+    {
+      "address": "Forsterstr. 57",
+      "city": "Mannheim",
+      "contactName": "Hanna Moos",
+      "companyName": "Blauer See Delikatessen",
+      "postalCode": "68306",
+      "customerID": "BLAUS"
+    },
+    {
+      "address": "24, place Kléber",
+      "city": "Strasbourg",
+      "contactName": "Frédérique Citeaux",
+      "companyName": "Blondel père et fils",
+      "postalCode": "67000",
+      "customerID": "BLONP"
+    },
+    {
+      "address": "C/ Araquil, 67",
+      "city": "Madrid",
+      "contactName": "Martín Sommer",
+      "companyName": "Bólido Comidas preparadas",
+      "postalCode": "28023",
+      "customerID": "BOLID"
+    },
+    {
+      "address": "12, rue des Bouchers",
+      "city": "Marseille",
+      "contactName": "Laurence Lebihan",
+      "companyName": "Bon app'",
+      "postalCode": "13008",
+      "customerID": "BONAP"
+    },
+    {
+      "address": "23 Tsawassen Blvd.",
+      "city": "Tsawassen",
+      "contactName": "Elizabeth Lincoln",
+      "companyName": "Bottom-Dollar Markets",
+      "postalCode": "T2F 8M4",
+      "customerID": "BOTTM"
+    },
+    {
+      "address": "Fauntleroy Circus",
+      "city": "London",
+      "contactName": "Victoria Ashworth",
+      "companyName": "B's Beverages",
+      "postalCode": "EC2 5NT",
+      "customerID": "BSBEV"
+    },
+    {
+      "address": "Cerrito 333",
+      "city": "Buenos Aires",
+      "contactName": "Patricio Simpson",
+      "companyName": "Cactus Comidas para llevar",
+      "postalCode": "1010",
+      "customerID": "CACTU"
+    },
+    {
+      "address": "Sierras de Granada 9993",
+      "city": "México D.F.",
+      "contactName": "Francisco Chang",
+      "companyName": "Centro comercial Moctezuma",
+      "postalCode": "05022",
+      "customerID": "CENTC"
+    },
+    {
+      "address": "Hauptstr. 29",
+      "city": "Bern",
+      "contactName": "Yang Wang",
+      "companyName": "Chop-suey Chinese",
+      "postalCode": "3012",
+      "customerID": "CHOPS"
+    },
+    {
+      "address": "Av. dos Lusíadas, 23",
+      "city": "São Paulo",
+      "contactName": "Pedro Afonso",
+      "companyName": "Comércio Mineiro",
+      "postalCode": "05432-043",
+      "customerID": "COMMI"
+    },
+    {
+      "address": "Berkeley Gardens12  Brewery ",
+      "city": "London",
+      "contactName": "Elizabeth Brown",
+      "companyName": "Consolidated Holdings",
+      "postalCode": "WX1 6LT",
+      "customerID": "CONSH"
+    },
+    {
+      "address": "Walserweg 21",
+      "city": "Aachen",
+      "contactName": "Sven Ottlieb",
+      "companyName": "Drachenblut Delikatessen",
+      "postalCode": "52066",
+      "customerID": "DRACD"
+    },
+    {
+      "address": "67, rue des Cinquante Otages",
+      "city": "Nantes",
+      "contactName": "Janine Labrune",
+      "companyName": "Du monde entier",
+      "postalCode": "44000",
+      "customerID": "DUMON"
+    },
+    {
+      "address": "35 King George",
+      "city": "London",
+      "contactName": "Ann Devon",
+      "companyName": "Eastern Connection",
+      "postalCode": "WX3 6FW",
+      "customerID": "EASTC"
+    },
+    {
+      "address": "Kirchgasse 6",
+      "city": "Graz",
+      "contactName": "Roland Mendel",
+      "companyName": "Ernst Handel",
+      "postalCode": "8010",
+      "customerID": "ERNSH"
+    },
+    {
+      "address": "Rua Orós, 92",
+      "city": "São Paulo",
+      "contactName": "Aria Cruz",
+      "companyName": "Familia Arquibaldo",
+      "postalCode": "05442-030",
+      "customerID": "FAMIA"
+    },
+    {
+      "address": "C/ Moralzarzal, 86",
+      "city": "Madrid",
+      "contactName": "Diego Roel",
+      "companyName": "FISSA Fabrica Inter. Salchichas S.A.",
+      "postalCode": "28034",
+      "customerID": "FISSA"
+    },
+    {
+      "address": "184, chaussée de Tournai",
+      "city": "Lille",
+      "contactName": "Martine Rancé",
+      "companyName": "Folies gourmandes",
+      "postalCode": "59000",
+      "customerID": "FOLIG"
+    },
+    {
+      "address": "Åkergatan 24",
+      "city": "Bräcke",
+      "contactName": "Maria Larsson",
+      "companyName": "Folk och fä HB",
+      "postalCode": "S-844 67",
+      "customerID": "FOLKO"
+    },
+    {
+      "address": "Berliner Platz 43",
+      "city": "München",
+      "contactName": "Peter Franken",
+      "companyName": "Frankenversand",
+      "postalCode": "80805",
+      "customerID": "FRANK"
+    },
+    {
+      "address": "54, rue Royale",
+      "city": "Nantes",
+      "contactName": "Carine Schmitt",
+      "companyName": "France restauration",
+      "postalCode": "44000",
+      "customerID": "FRANR"
+    },
+    {
+      "address": "Via Monte Bianco 34",
+      "city": "Torino",
+      "contactName": "Paolo Accorti",
+      "companyName": "Franchi S.p.A.",
+      "postalCode": "10100",
+      "customerID": "FRANS"
+    },
+    {
+      "address": "Jardim das rosas n. 32",
+      "city": "Lisboa",
+      "contactName": "Lino Rodriguez ",
+      "companyName": "Furia Bacalhau e Frutos do Mar",
+      "postalCode": "1675",
+      "customerID": "FURIB"
+    },
+    {
+      "address": "Rambla de Cataluña, 23",
+      "city": "Barcelona",
+      "contactName": "Eduardo Saavedra",
+      "companyName": "Galería del gastrónomo",
+      "postalCode": "08022",
+      "customerID": "GALED"
+    },
+    {
+      "address": "C/ Romero, 33",
+      "city": "Sevilla",
+      "contactName": "José Pedro Freyre",
+      "companyName": "Godos Cocina Típica",
+      "postalCode": "41101",
+      "customerID": "GODOS"
+    },
+    {
+      "address": "Av. Brasil, 442",
+      "city": "Campinas",
+      "contactName": "André Fonseca",
+      "companyName": "Gourmet Lanchonetes",
+      "postalCode": "04876-786",
+      "customerID": "GOURL"
+    },
+    {
+      "address": "2732 Baker Blvd.",
+      "city": "Eugene",
+      "contactName": "Howard Snyder",
+      "companyName": "Great Lakes Food Market",
+      "postalCode": "97403",
+      "customerID": "GREAL"
+    },
+    {
+      "address": "5ª Ave. Los Palos Grandes",
+      "city": "Caracas",
+      "contactName": "Manuel Pereira",
+      "companyName": "GROSELLA-Restaurante",
+      "postalCode": "1081",
+      "customerID": "GROSR"
+    },
+    {
+      "address": "Rua do Paço, 67",
+      "city": "Rio de Janeiro",
+      "contactName": "Mario Pontes",
+      "companyName": "Hanari Carnes",
+      "postalCode": "05454-876",
+      "customerID": "HANAR"
+    },
+    {
+      "address": "Carrera 22 con Ave. Carlos Soublette #8-35",
+      "city": "San Cristóbal",
+      "contactName": "Carlos Hernández",
+      "companyName": "HILARIÓN-Abastos",
+      "postalCode": "5022",
+      "customerID": "HILAA"
+    },
+    {
+      "address": "City Center Plaza516 Main St.",
+      "city": "Elgin",
+      "contactName": "Yoshi Latimer",
+      "companyName": "Hungry Coyote Import Store",
+      "postalCode": "97827",
+      "customerID": "HUNGC"
+    },
+    {
+      "address": "8 Johnstown Road",
+      "city": "Cork",
+      "contactName": "Patricia McKenna",
+      "companyName": "Hungry Owl All-Night Grocers",
+      "postalCode": "",
+      "customerID": "HUNGO"
+    },
+    {
+      "address": "Garden HouseCrowther Way",
+      "city": "Cowes",
+      "contactName": "Helen Bennett",
+      "companyName": "Island Trading",
+      "postalCode": "PO31 7PJ",
+      "customerID": "ISLAT"
+    },
+    {
+      "address": "Maubelstr. 90",
+      "city": "Brandenburg",
+      "contactName": "Philip Cramer",
+      "companyName": "Königlich Essen",
+      "postalCode": "14776",
+      "customerID": "KOENE"
+    },
+    {
+      "address": "67, avenue de l'Europe",
+      "city": "Versailles",
+      "contactName": "Daniel Tonini",
+      "companyName": "La corne d'abondance",
+      "postalCode": "78000",
+      "customerID": "LACOR"
+    },
+    {
+      "address": "1 rue Alsace-Lorraine",
+      "city": "Toulouse",
+      "contactName": "Annette Roulet",
+      "companyName": "La maison d'Asie",
+      "postalCode": "31000",
+      "customerID": "LAMAI"
+    },
+    {
+      "address": "1900 Oak St.",
+      "city": "Vancouver",
+      "contactName": "Yoshi Tannamuri",
+      "companyName": "Laughing Bacchus Wine Cellars",
+      "postalCode": "V3F 2K1",
+      "customerID": "LAUGB"
+    },
+    {
+      "address": "12 Orchestra Terrace",
+      "city": "Walla Walla",
+      "contactName": "John Steel",
+      "companyName": "Lazy K Kountry Store",
+      "postalCode": "99362",
+      "customerID": "LAZYK"
+    },
+    {
+      "address": "Magazinweg 7",
+      "city": "Frankfurt a.M. ",
+      "contactName": "Renate Messner",
+      "companyName": "Lehmanns Marktstand",
+      "postalCode": "60528",
+      "customerID": "LEHMS"
+    },
+    {
+      "address": "87 Polk St.Suite 5",
+      "city": "San Francisco",
+      "contactName": "Jaime Yorres",
+      "companyName": "Let's Stop N Shop",
+      "postalCode": "94117",
+      "customerID": "LETSS"
+    },
+    {
+      "address": "Carrera 52 con Ave. Bolívar #65-98 Llano Largo",
+      "city": "Barquisimeto",
+      "contactName": "Carlos González",
+      "companyName": "LILA-Supermercado",
+      "postalCode": "3508",
+      "customerID": "LILAS"
+    },
+    {
+      "address": "Ave. 5 de Mayo Porlamar",
+      "city": "I. de Margarita",
+      "contactName": "Felipe Izquierdo",
+      "companyName": "LINO-Delicateses",
+      "postalCode": "4980",
+      "customerID": "LINOD"
+    },
+    {
+      "address": "89 Chiaroscuro Rd.",
+      "city": "Portland",
+      "contactName": "Fran Wilson",
+      "companyName": "Lonesome Pine Restaurant",
+      "postalCode": "97219",
+      "customerID": "LONEP"
+    },
+    {
+      "address": "Via Ludovico il Moro 22",
+      "city": "Bergamo",
+      "contactName": "Giovanni Rovelli",
+      "companyName": "Magazzini Alimentari Riuniti",
+      "postalCode": "24100",
+      "customerID": "MAGAA"
+    },
+    {
+      "address": "Rue Joseph-Bens 532",
+      "city": "Bruxelles",
+      "contactName": "Catherine Dewey",
+      "companyName": "Maison Dewey",
+      "postalCode": "B-1180",
+      "customerID": "MAISD"
+    },
+    {
+      "address": "43 rue St. Laurent",
+      "city": "Montréal",
+      "contactName": "Jean Fresnière",
+      "companyName": "Mère Paillarde",
+      "postalCode": "H1J 1C3",
+      "customerID": "MEREP"
+    },
+    {
+      "address": "Heerstr. 22",
+      "city": "Leipzig",
+      "contactName": "Alexander Feuer",
+      "companyName": "Morgenstern Gesundkost",
+      "postalCode": "04179",
+      "customerID": "MORGK"
+    },
+    {
+      "address": "South House300 Queensbridge",
+      "city": "London",
+      "contactName": "Simon Crowther",
+      "companyName": "North/South",
+      "postalCode": "SW7 1RZ",
+      "customerID": "NORTS"
+    },
+    {
+      "address": "Ing. Gustavo Moncada 8585Piso 20-A",
+      "city": "Buenos Aires",
+      "contactName": "Yvonne Moncada",
+      "companyName": "Océano Atlántico Ltda.",
+      "postalCode": "1010",
+      "customerID": "OCEAN"
+    },
+    {
+      "address": "2743 Bering St.",
+      "city": "Anchorage",
+      "contactName": "Rene Phillips",
+      "companyName": "Old World Delicatessen",
+      "postalCode": "99508",
+      "customerID": "OLDWO"
+    },
+    {
+      "address": "Mehrheimerstr. 369",
+      "city": "Köln",
+      "contactName": "Henriette Pfalzheim",
+      "companyName": "Ottilies Käseladen",
+      "postalCode": "50739",
+      "customerID": "OTTIK"
+    },
+    {
+      "address": "265, boulevard Charonne",
+      "city": "Paris",
+      "contactName": "Marie Bertrand",
+      "companyName": "Paris spécialités",
+      "postalCode": "75012",
+      "customerID": "PARIS"
+    },
+    {
+      "address": "Calle Dr. Jorge Cash 321",
+      "city": "México D.F.",
+      "contactName": "Guillermo Fernández",
+      "companyName": "Pericles Comidas clásicas",
+      "postalCode": "05033",
+      "customerID": "PERIC"
+    },
+    {
+      "address": "Geislweg 14",
+      "city": "Salzburg",
+      "contactName": "Georg Pipps",
+      "companyName": "Piccolo und mehr",
+      "postalCode": "5020",
+      "customerID": "PICCO"
+    },
+    {
+      "address": "Estrada da saúde n. 58",
+      "city": "Lisboa",
+      "contactName": "Isabel de Castro",
+      "companyName": "Princesa Isabel Vinhos",
+      "postalCode": "1756",
+      "customerID": "PRINI"
+    },
+    {
+      "address": "Rua da Panificadora, 12",
+      "city": "Rio de Janeiro",
+      "contactName": "Bernardo Batista",
+      "companyName": "Que Delícia",
+      "postalCode": "02389-673",
+      "customerID": "QUEDE"
+    },
+    {
+      "address": "Alameda dos Canàrios, 891",
+      "city": "São Paulo",
+      "contactName": "Lúcia Carvalho",
+      "companyName": "Queen Cozinha",
+      "postalCode": "05487-020",
+      "customerID": "QUEEN"
+    },
+    {
+      "address": "Taucherstraße 10",
+      "city": "Cunewalde",
+      "contactName": "Horst Kloss",
+      "companyName": "QUICK-Stop",
+      "postalCode": "01307",
+      "customerID": "QUICK"
+    },
+    {
+      "address": "Av. del Libertador 900",
+      "city": "Buenos Aires",
+      "contactName": "Sergio Gutiérrez",
+      "companyName": "Rancho grande",
+      "postalCode": "1010",
+      "customerID": "RANCH"
+    },
+    {
+      "address": "2817 Milton Dr.",
+      "city": "Albuquerque",
+      "contactName": "Paula Wilson",
+      "companyName": "Rattlesnake Canyon Grocery",
+      "postalCode": "87110",
+      "customerID": "RATTC"
+    },
+    {
+      "address": "Strada Provinciale 124",
+      "city": "Reggio Emilia",
+      "contactName": "Maurizio Moroni",
+      "companyName": "Reggiani Caseifici",
+      "postalCode": "42100",
+      "customerID": "REGGC"
+    },
+    {
+      "address": "Av. Copacabana, 267",
+      "city": "Rio de Janeiro",
+      "contactName": "Janete Limeira",
+      "companyName": "Ricardo Adocicados",
+      "postalCode": "02389-890",
+      "customerID": "RICAR"
+    },
+    {
+      "address": "Grenzacherweg 237",
+      "city": "Genève",
+      "contactName": "Michael Holz",
+      "companyName": "Richter Supermarkt",
+      "postalCode": "1203",
+      "customerID": "RICSU"
+    },
+    {
+      "address": "Gran Vía, 1",
+      "city": "Madrid",
+      "contactName": "Alejandra Camino",
+      "companyName": "Romero y tomillo",
+      "postalCode": "28001",
+      "customerID": "ROMEY"
+    },
+    {
+      "address": "Erling Skakkes gate 78",
+      "city": "Stavern",
+      "contactName": "Jonas Bergulfsen",
+      "companyName": "Santé Gourmet",
+      "postalCode": "4110",
+      "customerID": "SANTG"
+    },
+    {
+      "address": "187 Suffolk Ln.",
+      "city": "Boise",
+      "contactName": "Jose Pavarotti",
+      "companyName": "Save-a-lot Markets",
+      "postalCode": "83720",
+      "customerID": "SAVEA"
+    },
+    {
+      "address": "90 Wadhurst Rd.",
+      "city": "London",
+      "contactName": "Hari Kumar",
+      "companyName": "Seven Seas Imports",
+      "postalCode": "OX15 4NB",
+      "customerID": "SEVES"
+    },
+    {
+      "address": "Vinbæltet 34",
+      "city": "København",
+      "contactName": "Jytte Petersen",
+      "companyName": "Simons bistro",
+      "postalCode": "1734",
+      "customerID": "SIMOB"
+    },
+    {
+      "address": "25, rue Lauriston",
+      "city": "Paris",
+      "contactName": "Dominique Perrier",
+      "companyName": "Spécialités du monde",
+      "postalCode": "75016",
+      "customerID": "SPECD"
+    },
+    {
+      "address": "P.O. Box 555",
+      "city": "Lander",
+      "contactName": "Art Braunschweiger",
+      "companyName": "Split Rail Beer & Ale",
+      "postalCode": "82520",
+      "customerID": "SPLIR"
+    },
+    {
+      "address": "Boulevard Tirou, 255",
+      "city": "Charleroi",
+      "contactName": "Pascale Cartrain",
+      "companyName": "Suprêmes délices",
+      "postalCode": "B-6000",
+      "customerID": "SUPRD"
+    },
+    {
+      "address": "89 Jefferson WaySuite 2",
+      "city": "Portland",
+      "contactName": "Liz Nixon",
+      "companyName": "The Big Cheese",
+      "postalCode": "97201",
+      "customerID": "THEBI"
+    },
+    {
+      "address": "55 Grizzly Peak Rd.",
+      "city": "Butte",
+      "contactName": "Liu Wong",
+      "companyName": "The Cracker Box",
+      "postalCode": "59801",
+      "customerID": "THECR"
+    },
+    {
+      "address": "Luisenstr. 48",
+      "city": "Münster",
+      "contactName": "Karin Josephs",
+      "companyName": "Toms Spezialitäten",
+      "postalCode": "44087",
+      "customerID": "TOMSP"
+    },
+    {
+      "address": "Avda. Azteca 123",
+      "city": "México D.F.",
+      "contactName": "Miguel Angel Paolino",
+      "companyName": "Tortuga Restaurante",
+      "postalCode": "05033",
+      "customerID": "TORTU"
+    },
+    {
+      "address": "Av. Inês de Castro, 414",
+      "city": "São Paulo",
+      "contactName": "Anabela Domingues",
+      "companyName": "Tradição Hipermercados",
+      "postalCode": "05634-030",
+      "customerID": "TRADH"
+    },
+    {
+      "address": "722 DaVinci Blvd.",
+      "city": "Kirkland",
+      "contactName": "Helvetius Nagy",
+      "companyName": "Trail's Head Gourmet Provisioners",
+      "postalCode": "98034",
+      "customerID": "TRAIH"
+    },
+    {
+      "address": "Smagsløget 45",
+      "city": "Århus",
+      "contactName": "Palle Ibsen",
+      "companyName": "Vaffeljernet",
+      "postalCode": "8200",
+      "customerID": "VAFFE"
+    },
+    {
+      "address": "2, rue du Commerce",
+      "city": "Lyon",
+      "contactName": "Mary Saveley",
+      "companyName": "Victuailles en stock",
+      "postalCode": "69004",
+      "customerID": "VICTE"
+    },
+    {
+      "address": "59 rue de l'Abbaye",
+      "city": "Reims",
+      "contactName": "Paul Henriot",
+      "companyName": "Vins et alcools Chevalier",
+      "postalCode": "51100",
+      "customerID": "VINET"
+    },
+    {
+      "address": "Adenauerallee 900",
+      "city": "Stuttgart",
+      "contactName": "Rita Müller",
+      "companyName": "Die Wandernde Kuh",
+      "postalCode": "70563",
+      "customerID": "WANDK"
+    },
+    {
+      "address": "Torikatu 38",
+      "city": "Oulu",
+      "contactName": "Pirkko Koskitalo",
+      "companyName": "Wartian Herkku",
+      "postalCode": "90110",
+      "customerID": "WARTH"
+    },
+    {
+      "address": "Rua do Mercado, 12",
+      "city": "Resende",
+      "contactName": "Paula Parente",
+      "companyName": "Wellington Importadora",
+      "postalCode": "08737-363",
+      "customerID": "WELLI"
+    },
+    {
+      "address": "305 - 14th Ave. S.Suite 3B",
+      "city": "Seattle",
+      "contactName": "Karl Jablonski",
+      "companyName": "White Clover Markets",
+      "postalCode": "98128",
+      "customerID": "WHITC"
+    },
+    {
+      "address": "Keskuskatu 45",
+      "city": "Helsinki",
+      "contactName": "Matti Karttunen",
+      "companyName": "Wilman Kala",
+      "postalCode": "21240",
+      "customerID": "WILMK"
+    },
+    {
+      "address": "ul. Filtrowa 68",
+      "city": "Warszawa",
+      "contactName": "Zbyszek Piestrzeniewicz",
+      "companyName": "Wolski  Zajazd",
+      "postalCode": "01-012",
+      "customerID": "WOLZA"
+    }
+  ],
+  "resultCount": 91
+}
